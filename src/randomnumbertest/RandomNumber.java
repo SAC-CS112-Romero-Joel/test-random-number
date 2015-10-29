@@ -13,13 +13,13 @@ public class RandomNumber {
 	public int GetaNumber (int high)
 	{
 		Random rand = new Random();
-		return rand.nextInt(high) + 1;
+		return rand.nextInt(high + 1);
 	}
 	
 	public int GetaNumber (int lo,int high)
 	{
 		Random rand = new Random();
-		return rand.nextInt(high-lo) + 1;
+		return rand.nextInt(high-lo + 1)+ lo;
 	}
 		
 	}
