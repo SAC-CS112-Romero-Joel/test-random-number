@@ -8,7 +8,7 @@ public class test {
 
 Scanner input = new Scanner(System.in);	
 		
-		System.out.println("Odd of Even Game");
+		System.out.println("Odd or Even Game");
 		
 		int i = 1;
 		int compNum= randomnumbertest.RandomNumber.GetaNumber();
@@ -23,10 +23,8 @@ Scanner input = new Scanner(System.in);
 	 {
 	System.out.println("ERROR INVALID INPUT loss 1 turn");
 	 }
-	}
-	
-	
-	if (compNum ==1 ||  compNum==3 || compNum==5 || compNum==7  || compNum==9 && ans ==1 ||  ans==3 || ans==5 || ans==7  || ans==9 )
+
+	else if (compNum ==1 ||  compNum==3 || compNum==5 || compNum==7  || compNum==9 && ans ==1 ||  ans==3 || ans==5 || ans==7  || ans==9 )
 	{System.out.println("we both got Odd ");
 
 	}
@@ -42,6 +40,9 @@ Scanner input = new Scanner(System.in);
 	{System.out.println("I got even you got odd");
 
 	}
+	}
+	
+	
 	i++;
 	}
 	}
